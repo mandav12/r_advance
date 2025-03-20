@@ -15,14 +15,16 @@ lapply(pac, function(p) library(p, character.only=TRUE, warn.conflicts=TRUE))
 #assigning file path for logfile
 
 log_file<-"/Users/ramanireddy/Documents/SAS/work/myR/projects/R Project/Output/log"
+#open the log file 
 log_open(file.path(log_file,"Table_adsl_14.1.2.log"))
+
 fpath<-"/Users/ramanireddy/Documents/SAS/work/myR/projects/R Project/Output/"
 
 sep("calling ADSL dataset")
 
 setwd("/Users/ramanireddy/Documents/SAS/work/myR/projects/R Project/ADAM Datasets")
 adsl<-read_sas("adsl.sas7bdat")
-
+#file path to save the output
 fpath<-"/Users/ramanireddy/Documents/SAS/work/myR/projects/R Project/Output/"
 
 
